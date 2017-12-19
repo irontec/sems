@@ -16,7 +16,7 @@ CPPFLAGS += -DHAVE_XMLRPCPP_SSL
 export USE_SPANDSP=yes LONG_DEBUG_MESSAGE=yes CPPFLAGS="$(CPPFLAGS)"
 
 %:
-	dh $@
+	dh $@ --with quilt
 
 override_dh_auto_build:
 	$(MAKE) \
